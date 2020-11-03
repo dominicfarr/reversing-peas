@@ -7,9 +7,10 @@ module.exports = function (config) {
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter'),
-      require('karma-coverage-istanbul-reporter'),
+      require('karma-firefox-launcher'),
+      require('karma-mocha-reporter'),
+      require('karma-jasmine-diff-reporter'),
+    require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
@@ -20,12 +21,12 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['jasmine-diff', 'mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['FirefoxHeadless'],
     singleRun: false,
     restartOnFileChange: true
   });
