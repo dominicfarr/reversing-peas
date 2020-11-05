@@ -39,5 +39,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Update dist to S3
-        run: aws s3 sync ./dist/reversing-peas s3://wwww.formulathoughts.com --delete
+        run: aws s3 sync ./dist/reversing-peas s3://www.formulathoughts.com --delete
         
