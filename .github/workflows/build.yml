@@ -1,6 +1,7 @@
 name: Build
-  NODE_VERSION=14.x
-  
+env:  
+  NODE_VERSION: 14.x
+
 on:
   push:
     branches:
@@ -28,10 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Node ${{ NODE_VERSION }}
+      - name: Node ${{ var.NODE_VERSION }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ NODE_VERSION }}
+          node-version: ${{ var.NODE_VERSION }}
 
       - name: npm install and npm run build
         run: |
