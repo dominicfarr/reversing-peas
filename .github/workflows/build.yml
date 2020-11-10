@@ -29,10 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Node ${{ var.NODE_VERSION }}
+      - name: Node ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ var.NODE_VERSION }}
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: npm install and npm run build
         run: |
