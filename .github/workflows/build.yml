@@ -1,6 +1,9 @@
 name: Build
 env:  
   NODE_VERSION: 14.x
+  os: [ubuntu-latest]
+  
+
 
 on:
   push:
@@ -41,6 +44,9 @@ jobs:
   test:
     needs: [build]
     runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
     steps:
       - name: Cache node modules
         uses: actions/cache@v1
