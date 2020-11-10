@@ -1,9 +1,6 @@
 name: Build
 env:  
   NODE_VERSION: 14.x
-  os: [ubuntu-latest]
-  
-
 
 on:
   push:
