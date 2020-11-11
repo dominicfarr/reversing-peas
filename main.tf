@@ -11,6 +11,16 @@ provider "aws" {
   version = "~> 2.52"
 }
 
+terraform {
+  backend "remote" {
+    organization = "domfarr"
+
+    workspaces {
+      name = "reversing-peas"
+    }
+  }
+}
+
 module "website" {
   source = "./.deploy/terraform/static-site"
   domain_name = var.domain_name
