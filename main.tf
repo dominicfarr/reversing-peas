@@ -7,7 +7,7 @@ variable "domain_name" {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
   version = "~> 2.52"
 }
 
@@ -22,6 +22,6 @@ terraform {
 }
 
 module "website" {
-  source = "./.deploy/terraform/static-site"
+  source      = "./.deploy/terraform/static-site"
   domain_name = var.domain_name
 }
