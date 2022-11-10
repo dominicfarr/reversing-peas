@@ -1768,6 +1768,11 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
 
+async@*:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
+  integrity sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==
+
 async@^2.6.2:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
@@ -2377,6 +2382,15 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
+ci@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ci/-/ci-1.0.0.tgz#4bcc5bf12d820600f12b1cbbb1d8cd3b3f0f68cc"
+  integrity sha512-e4Musul1su4/rdgOUz0cnq4nFQ49v5NszhNS7K+D4MywQAy4C6CUcrmqGS9FEjIvGu6UIhSouqAW9i1VA8EwUQ==
+  dependencies:
+    events "*"
+    gitwin "*"
+    msbuild "*"
+
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
@@ -2532,7 +2546,7 @@ colorette@^1.2.1:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha512-puCDz0CzydiSYOrnXpz/PKd69zRrribezjtE9yd4zvytoRc8+RY/KJPvtPFKZS3E3wP6neGyMe0vOTlHO5L3Pw==
 
-colors@1.4.0, colors@^1.4.0:
+colors@*, colors@1.4.0, colors@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -3606,6 +3620,11 @@ eventemitter3@^4.0.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
+events@*:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
+  integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
+
 events@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.2.0.tgz#93b87c18f8efcd4202a461aec4dfc0556b639379"
@@ -4088,6 +4107,14 @@ getpass@^0.1.1:
   integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
   dependencies:
     assert-plus "^1.0.0"
+
+gitwin@*:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gitwin/-/gitwin-0.2.0.tgz#8b80602484cd596f7f0b97b987651d96e8b1c6e3"
+  integrity sha512-5eFiSS6LN8EBpL4/Zf+MmRtVrW+YyB7p0vHHQftp09aG2BLisH3ITzuZb2NcvxnMA4IWGlXqfxyhn7nGz0LXYA==
+  dependencies:
+    colors "*"
+    events "*"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -4933,7 +4960,7 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
 isarray@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.1.tgz#a37d94ed9cda2d59865c9f76fe596ee1f338741e"
-  integrity sha1-o32U7ZzaLVmGXJ92/llu4fM4dB4=
+  integrity sha512-c2cu3UxbI+b6kR3fy0nRnAhodsvR9dx7U5+znCOzdj6IfP3upFURTr0Xl5BlQZNKZjEtxrmVyfSdeE3O57smoQ==
 
 isbinaryfile@^4.0.6:
   version "4.0.6"
@@ -5828,7 +5855,7 @@ move-concurrently@^1.0.1:
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
-  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+  integrity sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==
 
 ms@2.1.1:
   version "2.1.1"
@@ -5839,6 +5866,15 @@ ms@2.1.2, ms@^2.0.0, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+msbuild@*:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/msbuild/-/msbuild-1.2.0.tgz#178580bc327f5efd810822b148daf0c55924de17"
+  integrity sha512-2mQnBXLrhSjuAX4xSyXDWoLEdvNU60hc/yPJf/e8isCzZk6rLVD7fBDjOksWV6mYWbHhOUZ4L5N4wSNhW0hXEw==
+  dependencies:
+    async "*"
+    colors "*"
+    events "*"
 
 multicast-dns-service-types@^1.1.0:
   version "1.1.0"
@@ -7863,9 +7899,9 @@ socket.io-client@2.3.0:
     to-array "0.1.4"
 
 socket.io-parser@~3.3.0:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-3.3.1.tgz#f07d9c8cb3fb92633aa93e76d98fd3a334623199"
-  integrity sha512-1QLvVAe8dTz+mKmZ07Swxt+LAo4Y1ff50rlyoEx00TQmDFVQYPfcqGvIDJLGaBdhdNCecXtyKpD+EgKGcmmbuQ==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-3.3.3.tgz#3a8b84823eba87f3f7624e64a8aaab6d6318a72f"
+  integrity sha512-qOg87q1PMWWTeO01768Yh9ogn7chB9zkKtQnya41Y355S0UmpXgpcrFwAgjYJxu9BdKug5r5e9YtVSeWhKBUZg==
   dependencies:
     component-emitter "~1.3.0"
     debug "~3.1.0"
